@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<title>BV's Homepage</title>
+<title>Group 3's Homepage</title>
 
 <!-- Bootstrap core CSS -->
 <link rel="stylesheet" href="css/custom.css?v=2020-10-10">
@@ -37,38 +37,9 @@
 	  50% { color: blue; }
 	  75% { color: green; }
 	  100% { color: red; }
-	}
-	
-	.logo{
-		padding-right: 25px;
-	}
-	
-	.gif
-	{
-		padding-right: 25px;
-		padding-bottom: 25px;
 	}	
-
-	.button {
-	  background-color: #EEEDED;  	  
-	  padding: 15px 22px;
-	  text-align: center;
-	  text-decoration: none;
-	  display: inline-block;
-	  font-size: 16px;
-	  margin: 6px 1.5px;
-	  cursor: pointer;
-	  border: 2px solid #008CBA;
-	  color: black; 
-	  border-radius: 4px;
-	  text-align: center;
-	}
-	
-	
-	
 </style>
 
-<!-- body -->
 <body>
 
 <div class="container">
@@ -85,10 +56,32 @@
 </div>
 <hr>
 
-<h3>People</h3>
-<li>Spencer Durrant</li>
-<li>Tristan Stotesbery</li>
-<li>Ben Van Hoose</li><br>
+<h3>Meet the Team</h3>
+<table style="width:100%">
+	  <tr>
+		<th>Name</th>
+		<th>Email</th>
+		<th>Phone</th>
+	  </tr>
+	  <tr>
+		<td>Spencer Durrant</td>
+		<td>spencerdurrant@gmail.com</td>
+		<td>(801) 815-2561</td>
+	  </tr>
+	  <tr>
+		<td>Tristan Stotesbery</td>
+		<td>tristan.stotesbery@gmail.com</td>
+		<td>(801) 839-9688</td>
+	  </tr>
+	  <tr>
+		<td>Ben Van Hoose</td>
+		<td>benvanhoose1@gmail.com</td>
+		<td>(541) 806-2912</td>
+	  </tr>
+	</table>
+	<br>
+
+
 <p>Looking for: People experienced with bluetooth interfacing and 
 app development, people with 3D-printing experience.</p>
 <hr>
@@ -97,72 +90,118 @@ app development, people with 3D-printing experience.</p>
 	<p>Our teams objective is to create a handheld water depth sensor 
 	that will interface with a phone to give the user the depth, 
 	for use in applications such as canyoneering, fishing, 
-	cliff diving, search and rescue.</p><br>
+	cliff diving, search and rescue.</p>
 	<p>We need to utilize either ultrasonic sensors, pressure 
 	sensors, or sonar in order to calculate water depth regardless 
 	on how clear the water is. Needs to be small enough to be handheld,
 	lightweight for taking in a pack.</P>
 	
 	<p><b>Importance</b></p>
+	<p>This project allows improved safety in several applications 
+	including those mentioned above. Knowing how deep or shallow water is 
+	can prevent accidents from happening in areas.</p>
+	
 	
 <hr>
 
-<h3>Skills</h3>
-<button class="button">MATLAB</button>
-<button class="button">Java</button>
-<button class="button">C#</button>
-<button class="button">C</button>	
-<button class="button">Python</button>
-<button class="button">hmtl</button>
-<button class="button">php</button>
-<button class="button">javascript</button>
-<button class="button">PCB Design</button>
-<button class="button">Soldering</button>
-<button class="button">Circuits</button>
-
-<hr>	
-
-<h3>Experience</h3>
-<div>
-<p style="text-align:right;">1/20 – present</p>
-<a href="https://quartzdyne.com/"><img src="images/Quartzdyne_Logo_Header.png" ALIGN=”top” style="width: 110px;" class="logo"></a>
-
-<dt>Quartzdyne – Engineer Intern</dt>
+<h3>Challenges</h3>
+	<dt>Hardware</dt>
 			<ul>
-			  <li>- Implemented an automated calibration system using MATLAB providing high levels of accuracy and freeing up production resources</li>
-			  <li>- Developed a website using HTML and PHP providing test results from a database</li>
-			  <li>- Designed and implemented a PCB for a new system involving RS-232 communication with transducers</li>
+				  <li>Reliable power supply</li>
+				  <li>Designing a pcb to manage the sensor and connect with bluetooth</li>
+				  <li>Waterproofing</li>
 			</ul>
-</div>
-
-<div>
-<p style="text-align:right;">6/18 – 1/20</p>
-<a href="https://pillpack.com/"><img src="images/pillpack_logo.png" ALIGN=”top” style="width: 110px; border-radius:0px" class="logo"></a>
-<dt>PillPack Pharmacy- Enrollment Advisor</dt>
+	<dt>Software</dt>
 			<ul>
-			  <li>- Pre- Amazon acquisition, managed a team of 5 enrollment advisors, and ran meetings biweekly to set benchmark and deadline goals</li>
-			  <li>- Advised clients in the decision process regarding insurance and pharmacy plans</li>
+				  <li>Bluetooth interfacing with a phone</li>
+				  <li>Mobile app development</li>
+				  <li>Correct calculations of water depth from sensor input</li>
 			</ul>
-</div>
-<br>
+
+<hr>
+<h3>Proposed Methods</h3>
+	<dt>Hardware</dt>
+			<ul>
+				  <li>Build a rechargable lithium-ion battery pack that can handle the requirements of the device</li>
+				  <li>Study the datasheets of the sensor we use in order to interface it correctly with a microcontroller</li>
+				  <li>Design the enclosure such that it protects the electronics from water and debris</li>
+			</ul>
+	<dt>Software</dt>
+			<ul>
+				  <li>Learn Bluetooth protocols from online sources</li>
+				  <li>Either recruit someone who knows app development or one person dedicates time to learn this</li>
+				  <li>Navigate the datasheet of the sensing device or board</li>
+			</ul>
+<hr>
+
+<h3>Budget</h3>
+	<dt>Final Build</dt>
+	<ul>
+		  <li>PCB: $10</li>
+		  <li>PCB parts: $2</li>
+		  <li>Microprocessor: $6</li>
+		  <li>Sensor: $20</li>
+		  <li>Blutooth Module: $10</li>
+		  <li>Batteries: $4</li>
+		  <li>3D printing filament: $11</li>
+		  <li>Styrofoam: $20</li>
+		  <li>Fiberglass: $11</li>
+	</ul>
+	 <p><b>Total cost for 1 device: $99</b></p>
+	<dt>Prototype Build</dt>
+	<ul>		  
+		  <li>Sensor: $20-100</li>
+		  <li>Blutooth Module: $10</li>
+		  <li>Batteries: $4</li>
+	</ul>
+	 <p><b>Total cost for 1 device: $34 - $114</b></p>
+<hr>
+
+<h3>Timeline</h3>
+<p>Our goal for our prototype is to have working sensor that can read 
+water depth utilizing arduino or raspberry pi for calculations.</p>
+
+	<table style="width:100%">
+	  <tr>
+		<th>Objective</th>
+		<th>Date</th>
+		<th>Completed</th>
+	  </tr>
+	  <tr>
+		<td>Decide what sensors to order</td>
+		<td>2/26/21</td>
+		<td>no</td>
+	  </tr>
+	  <tr>
+		<td>Add template and finalize Webpage V2</td>
+		<td>3/12/21</td>
+		<td>no</td>
+	  </tr>
+	  <tr>
+		<td>Prototype Completed</td>
+		<td>5/5/21</td>
+		<td>no</td>
+	  </tr>
+	</table>
 	
 <hr>
-<h3>Expectation</h3>
-<p>I'm looking for a team of motivated people that take pride in their work and enjoy the process.</p>
+<h3>Collaboration Plan</h3>
+	<dt>Communications</dt>
+		<li>Zoom and in-person</li>
+	<dt>Conflict Resolution</dt>
+		<li>Vote - Democracy</li>
+	<dt>Maintaining Momentum</dt>
+		<li>Set goals, meet regularly, and report progress</li>
+	<dt>Accountability</dt>
+		<li>Make appropriate adjustments to make up for failed progress</li>
+	<dt>Budget Distribution</dt>
+		<li>Evenly distributed</li>
 <hr>
-
-
-<h3>Contact</h3>
-<p>Phone: (541) 806-2912</p>
-<p>Email: benvanhoose1@gmail.com</P>
-<p>Umail: u1134346@utah.edu</P>
-<hr>
-
 </div>
 
 
 <hr>
-<footer>Last update 02/05/2021</footer>
+<footer>Last update 02/24/2021</footer>
 
 </div>
 
